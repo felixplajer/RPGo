@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CCE013B81FB94937002C61DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE013B71FB94937002C61DC /* AppDelegate.swift */; };
+		CCE013BA1FB94937002C61DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE013B91FB94937002C61DC /* ViewController.swift */; };
+		CCE013BD1FB94937002C61DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE013BB1FB94937002C61DC /* Main.storyboard */; };
+		CCE013C01FB94937002C61DC /* RPGo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCE013BE1FB94937002C61DC /* RPGo.xcdatamodeld */; };
+		CCE013C21FB94937002C61DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCE013C11FB94937002C61DC /* Assets.xcassets */; };
+		CCE013C51FB94937002C61DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE013C31FB94937002C61DC /* LaunchScreen.storyboard */; };
+		CCE013D01FB94938002C61DC /* RPGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE013CF1FB94938002C61DC /* RPGoTests.swift */; };
+		CCE013DB1FB94938002C61DC /* RPGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE013DA1FB94938002C61DC /* RPGoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCE013CC1FB94938002C61DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCE013AC1FB94937002C61DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCE013B31FB94937002C61DC;
+			remoteInfo = RPGo;
+		};
+		CCE013D71FB94938002C61DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCE013AC1FB94937002C61DC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCE013B31FB94937002C61DC;
+			remoteInfo = RPGo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CCE013B41FB94937002C61DC /* RPGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE013B71FB94937002C61DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCE013B91FB94937002C61DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCE013BC1FB94937002C61DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCE013BF1FB94937002C61DC /* RPGo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RPGo.xcdatamodel; sourceTree = "<group>"; };
+		CCE013C11FB94937002C61DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCE013C41FB94937002C61DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCE013C61FB94937002C61DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCE013CB1FB94938002C61DC /* RPGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE013CF1FB94938002C61DC /* RPGoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPGoTests.swift; sourceTree = "<group>"; };
+		CCE013D11FB94938002C61DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCE013D61FB94938002C61DC /* RPGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCE013DA1FB94938002C61DC /* RPGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPGoUITests.swift; sourceTree = "<group>"; };
+		CCE013DC1FB94938002C61DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCE013B11FB94937002C61DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE013C81FB94938002C61DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE013D31FB94938002C61DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CCE013AB1FB94937002C61DC = {
+			isa = PBXGroup;
+			children = (
+				CCE013B61FB94937002C61DC /* RPGo */,
+				CCE013CE1FB94938002C61DC /* RPGoTests */,
+				CCE013D91FB94938002C61DC /* RPGoUITests */,
+				CCE013B51FB94937002C61DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCE013B51FB94937002C61DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCE013B41FB94937002C61DC /* RPGo.app */,
+				CCE013CB1FB94938002C61DC /* RPGoTests.xctest */,
+				CCE013D61FB94938002C61DC /* RPGoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCE013B61FB94937002C61DC /* RPGo */ = {
+			isa = PBXGroup;
+			children = (
+				CCE013B71FB94937002C61DC /* AppDelegate.swift */,
+				CCE013B91FB94937002C61DC /* ViewController.swift */,
+				CCE013BB1FB94937002C61DC /* Main.storyboard */,
+				CCE013C11FB94937002C61DC /* Assets.xcassets */,
+				CCE013C31FB94937002C61DC /* LaunchScreen.storyboard */,
+				CCE013C61FB94937002C61DC /* Info.plist */,
+				CCE013BE1FB94937002C61DC /* RPGo.xcdatamodeld */,
+			);
+			path = RPGo;
+			sourceTree = "<group>";
+		};
+		CCE013CE1FB94938002C61DC /* RPGoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCE013CF1FB94938002C61DC /* RPGoTests.swift */,
+				CCE013D11FB94938002C61DC /* Info.plist */,
+			);
+			path = RPGoTests;
+			sourceTree = "<group>";
+		};
+		CCE013D91FB94938002C61DC /* RPGoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CCE013DA1FB94938002C61DC /* RPGoUITests.swift */,
+				CCE013DC1FB94938002C61DC /* Info.plist */,
+			);
+			path = RPGoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCE013B31FB94937002C61DC /* RPGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCE013DF1FB94938002C61DC /* Build configuration list for PBXNativeTarget "RPGo" */;
+			buildPhases = (
+				CCE013B01FB94937002C61DC /* Sources */,
+				CCE013B11FB94937002C61DC /* Frameworks */,
+				CCE013B21FB94937002C61DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RPGo;
+			productName = RPGo;
+			productReference = CCE013B41FB94937002C61DC /* RPGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCE013CA1FB94938002C61DC /* RPGoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCE013E21FB94938002C61DC /* Build configuration list for PBXNativeTarget "RPGoTests" */;
+			buildPhases = (
+				CCE013C71FB94938002C61DC /* Sources */,
+				CCE013C81FB94938002C61DC /* Frameworks */,
+				CCE013C91FB94938002C61DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCE013CD1FB94938002C61DC /* PBXTargetDependency */,
+			);
+			name = RPGoTests;
+			productName = RPGoTests;
+			productReference = CCE013CB1FB94938002C61DC /* RPGoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CCE013D51FB94938002C61DC /* RPGoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCE013E51FB94938002C61DC /* Build configuration list for PBXNativeTarget "RPGoUITests" */;
+			buildPhases = (
+				CCE013D21FB94938002C61DC /* Sources */,
+				CCE013D31FB94938002C61DC /* Frameworks */,
+				CCE013D41FB94938002C61DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCE013D81FB94938002C61DC /* PBXTargetDependency */,
+			);
+			name = RPGoUITests;
+			productName = RPGoUITests;
+			productReference = CCE013D61FB94938002C61DC /* RPGoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCE013AC1FB94937002C61DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Felix Plajer";
+				TargetAttributes = {
+					CCE013B31FB94937002C61DC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					CCE013CA1FB94938002C61DC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CCE013B31FB94937002C61DC;
+					};
+					CCE013D51FB94938002C61DC = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CCE013B31FB94937002C61DC;
+					};
+				};
+			};
+			buildConfigurationList = CCE013AF1FB94937002C61DC /* Build configuration list for PBXProject "RPGo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCE013AB1FB94937002C61DC;
+			productRefGroup = CCE013B51FB94937002C61DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCE013B31FB94937002C61DC /* RPGo */,
+				CCE013CA1FB94938002C61DC /* RPGoTests */,
+				CCE013D51FB94938002C61DC /* RPGoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCE013B21FB94937002C61DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE013C51FB94937002C61DC /* LaunchScreen.storyboard in Resources */,
+				CCE013C21FB94937002C61DC /* Assets.xcassets in Resources */,
+				CCE013BD1FB94937002C61DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE013C91FB94938002C61DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE013D41FB94938002C61DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCE013B01FB94937002C61DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE013BA1FB94937002C61DC /* ViewController.swift in Sources */,
+				CCE013B81FB94937002C61DC /* AppDelegate.swift in Sources */,
+				CCE013C01FB94937002C61DC /* RPGo.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE013C71FB94938002C61DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE013D01FB94938002C61DC /* RPGoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCE013D21FB94938002C61DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCE013DB1FB94938002C61DC /* RPGoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCE013CD1FB94938002C61DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCE013B31FB94937002C61DC /* RPGo */;
+			targetProxy = CCE013CC1FB94938002C61DC /* PBXContainerItemProxy */;
+		};
+		CCE013D81FB94938002C61DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCE013B31FB94937002C61DC /* RPGo */;
+			targetProxy = CCE013D71FB94938002C61DC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCE013BB1FB94937002C61DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCE013BC1FB94937002C61DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCE013C31FB94937002C61DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCE013C41FB94937002C61DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCE013DD1FB94938002C61DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCE013DE1FB94938002C61DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCE013E01FB94938002C61DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RPGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = felixplajer.RPGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCE013E11FB94938002C61DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RPGo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = felixplajer.RPGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CCE013E31FB94938002C61DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RPGoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = felixplajer.RPGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPGo.app/RPGo";
+			};
+			name = Debug;
+		};
+		CCE013E41FB94938002C61DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RPGoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = felixplajer.RPGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPGo.app/RPGo";
+			};
+			name = Release;
+		};
+		CCE013E61FB94938002C61DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RPGoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = felixplajer.RPGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RPGo;
+			};
+			name = Debug;
+		};
+		CCE013E71FB94938002C61DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RPGoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = felixplajer.RPGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RPGo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCE013AF1FB94937002C61DC /* Build configuration list for PBXProject "RPGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE013DD1FB94938002C61DC /* Debug */,
+				CCE013DE1FB94938002C61DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCE013DF1FB94938002C61DC /* Build configuration list for PBXNativeTarget "RPGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE013E01FB94938002C61DC /* Debug */,
+				CCE013E11FB94938002C61DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCE013E21FB94938002C61DC /* Build configuration list for PBXNativeTarget "RPGoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE013E31FB94938002C61DC /* Debug */,
+				CCE013E41FB94938002C61DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCE013E51FB94938002C61DC /* Build configuration list for PBXNativeTarget "RPGoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCE013E61FB94938002C61DC /* Debug */,
+				CCE013E71FB94938002C61DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CCE013BE1FB94937002C61DC /* RPGo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CCE013BF1FB94937002C61DC /* RPGo.xcdatamodel */,
+			);
+			currentVersion = CCE013BF1FB94937002C61DC /* RPGo.xcdatamodel */;
+			path = RPGo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CCE013AC1FB94937002C61DC /* Project object */;
+}

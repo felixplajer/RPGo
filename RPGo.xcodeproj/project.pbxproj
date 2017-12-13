@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC93B6331FDE9E490069421B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC93B6321FDE9E490069421B /* MapViewController.swift */; };
+		CC93B63B1FDEA52B0069421B /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC93B63A1FDEA52B0069421B /* MapAnnotation.swift */; };
+		CC93B63D1FDEBDB90069421B /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC93B63C1FDEBDB90069421B /* BattleViewController.swift */; };
+		CCBC4C701FDE026F008946CC /* ItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC4C6F1FDE026F008946CC /* ItemTableViewController.swift */; };
+		CCBC4C721FDE062A008946CC /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC4C711FDE0629008946CC /* ItemTableViewCell.swift */; };
+		CCBC4C741FDE0717008946CC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC4C731FDE0717008946CC /* Item.swift */; };
+		CCBC4C761FDE1052008946CC /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC4C751FDE1052008946CC /* Player.swift */; };
+		CCBC4C781FDE6C62008946CC /* CharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBC4C771FDE6C62008946CC /* CharacterViewController.swift */; };
 		CCE013B81FB94937002C61DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE013B71FB94937002C61DC /* AppDelegate.swift */; };
 		CCE013BA1FB94937002C61DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE013B91FB94937002C61DC /* ViewController.swift */; };
 		CCE013BD1FB94937002C61DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE013BB1FB94937002C61DC /* Main.storyboard */; };
@@ -15,6 +23,8 @@
 		CCE013C51FB94937002C61DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCE013C31FB94937002C61DC /* LaunchScreen.storyboard */; };
 		CCE013D01FB94938002C61DC /* RPGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE013CF1FB94938002C61DC /* RPGoTests.swift */; };
 		CCE013DB1FB94938002C61DC /* RPGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE013DA1FB94938002C61DC /* RPGoUITests.swift */; };
+		CCE013EA1FB94F27002C61DC /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE013E91FB94F27002C61DC /* HealthKit.framework */; };
+		CCE013EF1FBA2C00002C61DC /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE013EE1FBA2C00002C61DC /* StatusViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC93B6321FDE9E490069421B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		CC93B63A1FDEA52B0069421B /* MapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
+		CC93B63C1FDEBDB90069421B /* BattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleViewController.swift; sourceTree = "<group>"; };
+		CCBC4C6F1FDE026F008946CC /* ItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewController.swift; sourceTree = "<group>"; };
+		CCBC4C711FDE0629008946CC /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		CCBC4C731FDE0717008946CC /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		CCBC4C751FDE1052008946CC /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		CCBC4C771FDE6C62008946CC /* CharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewController.swift; sourceTree = "<group>"; };
 		CCE013B41FB94937002C61DC /* RPGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE013B71FB94937002C61DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCE013B91FB94937002C61DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +67,9 @@
 		CCE013D61FB94938002C61DC /* RPGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCE013DA1FB94938002C61DC /* RPGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPGoUITests.swift; sourceTree = "<group>"; };
 		CCE013DC1FB94938002C61DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCE013E91FB94F27002C61DC /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		CCE013EB1FB94F28002C61DC /* RPGo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RPGo.entitlements; sourceTree = "<group>"; };
+		CCE013EE1FBA2C00002C61DC /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCE013EA1FB94F27002C61DC /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +105,7 @@
 				CCE013CE1FB94938002C61DC /* RPGoTests */,
 				CCE013D91FB94938002C61DC /* RPGoUITests */,
 				CCE013B51FB94937002C61DC /* Products */,
+				CCE013E81FB94F27002C61DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +122,23 @@
 		CCE013B61FB94937002C61DC /* RPGo */ = {
 			isa = PBXGroup;
 			children = (
-				CCE013B71FB94937002C61DC /* AppDelegate.swift */,
-				CCE013B91FB94937002C61DC /* ViewController.swift */,
+				CCE013EB1FB94F28002C61DC /* RPGo.entitlements */,
 				CCE013BB1FB94937002C61DC /* Main.storyboard */,
+				CC93B63A1FDEA52B0069421B /* MapAnnotation.swift */,
+				CC93B6321FDE9E490069421B /* MapViewController.swift */,
+				CCBC4C6F1FDE026F008946CC /* ItemTableViewController.swift */,
+				CCBC4C711FDE0629008946CC /* ItemTableViewCell.swift */,
+				CCE013B91FB94937002C61DC /* ViewController.swift */,
+				CCBC4C771FDE6C62008946CC /* CharacterViewController.swift */,
+				CC93B63C1FDEBDB90069421B /* BattleViewController.swift */,
+				CCE013EE1FBA2C00002C61DC /* StatusViewController.swift */,
+				CCBC4C751FDE1052008946CC /* Player.swift */,
+				CCBC4C731FDE0717008946CC /* Item.swift */,
 				CCE013C11FB94937002C61DC /* Assets.xcassets */,
 				CCE013C31FB94937002C61DC /* LaunchScreen.storyboard */,
 				CCE013C61FB94937002C61DC /* Info.plist */,
 				CCE013BE1FB94937002C61DC /* RPGo.xcdatamodeld */,
+				CCE013B71FB94937002C61DC /* AppDelegate.swift */,
 			);
 			path = RPGo;
 			sourceTree = "<group>";
@@ -126,6 +159,14 @@
 				CCE013DC1FB94938002C61DC /* Info.plist */,
 			);
 			path = RPGoUITests;
+			sourceTree = "<group>";
+		};
+		CCE013E81FB94F27002C61DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCE013E91FB94F27002C61DC /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +238,17 @@
 					CCE013B31FB94937002C61DC = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					CCE013CA1FB94938002C61DC = {
 						CreatedOnToolsVersion = 9.1;
@@ -262,8 +314,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC93B63D1FDEBDB90069421B /* BattleViewController.swift in Sources */,
+				CCBC4C781FDE6C62008946CC /* CharacterViewController.swift in Sources */,
+				CCBC4C701FDE026F008946CC /* ItemTableViewController.swift in Sources */,
+				CCE013EF1FBA2C00002C61DC /* StatusViewController.swift in Sources */,
+				CC93B6331FDE9E490069421B /* MapViewController.swift in Sources */,
+				CC93B63B1FDEA52B0069421B /* MapAnnotation.swift in Sources */,
 				CCE013BA1FB94937002C61DC /* ViewController.swift in Sources */,
 				CCE013B81FB94937002C61DC /* AppDelegate.swift in Sources */,
+				CCBC4C761FDE1052008946CC /* Player.swift in Sources */,
+				CCBC4C741FDE0717008946CC /* Item.swift in Sources */,
+				CCBC4C721FDE062A008946CC /* ItemTableViewCell.swift in Sources */,
 				CCE013C01FB94937002C61DC /* RPGo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,7 +491,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RPGo/RPGo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5T54N9W6H6;
 				INFOPLIST_FILE = RPGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = felixplajer.RPGo;
@@ -444,7 +507,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RPGo/RPGo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5T54N9W6H6;
 				INFOPLIST_FILE = RPGo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = felixplajer.RPGo;

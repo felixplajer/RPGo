@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var player: Player
+    
+    required init?(coder aDecoder: NSCoder) {
+        self.player = Player.init(coder: aDecoder)!
+        super.init(coder: aDecoder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

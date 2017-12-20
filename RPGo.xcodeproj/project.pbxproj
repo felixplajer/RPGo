@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A8A064D1FEB1D15009940B6 /* Items.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A064C1FEB1D15009940B6 /* Items.plist */; };
+		6A8A064F1FEB1D27009940B6 /* CharacterStats.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A8A064E1FEB1D27009940B6 /* CharacterStats.plist */; };
 		CC93B6331FDE9E490069421B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC93B6321FDE9E490069421B /* MapViewController.swift */; };
 		CC93B63B1FDEA52B0069421B /* MapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC93B63A1FDEA52B0069421B /* MapAnnotation.swift */; };
 		CC93B63D1FDEBDB90069421B /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC93B63C1FDEBDB90069421B /* BattleViewController.swift */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A8A064C1FEB1D15009940B6 /* Items.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Items.plist; sourceTree = "<group>"; };
+		6A8A064E1FEB1D27009940B6 /* CharacterStats.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = CharacterStats.plist; sourceTree = "<group>"; };
 		CC93B6321FDE9E490069421B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		CC93B63A1FDEA52B0069421B /* MapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotation.swift; sourceTree = "<group>"; };
 		CC93B63C1FDEBDB90069421B /* BattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleViewController.swift; sourceTree = "<group>"; };
@@ -129,10 +133,12 @@
 				CCBC4C6F1FDE026F008946CC /* ItemTableViewController.swift */,
 				CCBC4C711FDE0629008946CC /* ItemTableViewCell.swift */,
 				CCE013B91FB94937002C61DC /* ViewController.swift */,
+				6A8A064E1FEB1D27009940B6 /* CharacterStats.plist */,
 				CCBC4C771FDE6C62008946CC /* CharacterViewController.swift */,
 				CC93B63C1FDEBDB90069421B /* BattleViewController.swift */,
 				CCE013EE1FBA2C00002C61DC /* StatusViewController.swift */,
 				CCBC4C751FDE1052008946CC /* Player.swift */,
+				6A8A064C1FEB1D15009940B6 /* Items.plist */,
 				CCBC4C731FDE0717008946CC /* Item.swift */,
 				CCE013C11FB94937002C61DC /* Assets.xcassets */,
 				CCE013C31FB94937002C61DC /* LaunchScreen.storyboard */,
@@ -290,6 +296,8 @@
 				CCE013C51FB94937002C61DC /* LaunchScreen.storyboard in Resources */,
 				CCE013C21FB94937002C61DC /* Assets.xcassets in Resources */,
 				CCE013BD1FB94937002C61DC /* Main.storyboard in Resources */,
+				6A8A064D1FEB1D15009940B6 /* Items.plist in Resources */,
+				6A8A064F1FEB1D27009940B6 /* CharacterStats.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

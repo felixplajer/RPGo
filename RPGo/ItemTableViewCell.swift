@@ -37,7 +37,7 @@ class ItemTableViewCell: UITableViewCell {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        self.item = Item.init(image: "treebig", type: .Defense, value: 5)
+        self.item = Item.init(image: "treebig", type: .Defense, value: 5, rarity: 0)
         super.init(coder: aDecoder)
     }
     

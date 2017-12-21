@@ -44,21 +44,22 @@ class MapViewController: ViewController, MKMapViewDelegate {
         for num in 1...20 {
             let value = arc4random_uniform(11)
             let type = arc4random_uniform(3)
+            let rarity = arc4random_uniform(3)
             var typeEnum : Item.ItemType
             var image : String
             switch type {
             case 0:
                 typeEnum = .Attack
-                image = "treebig"
+                image = "Item__07"
             case 1:
                 typeEnum = .Defense
-                image = "stepsbig"
+                image = "Item__24"
             default:
                 typeEnum = .Health
-                image = "signbig"
+                image = "Item__29"
             }
 
-            let item = Item(image: image, type: typeEnum, value: Int(value))
+            let item = Item(image: image, type: typeEnum, value: Int(value + value*(rarity/2)) , rarity: Int(rarity))
 
             let treasure = Treasure(item: item, location: randCoords(lat: userLat, long: userLong), id: num)
             items.append(treasure)
@@ -72,6 +73,12 @@ class MapViewController: ViewController, MKMapViewDelegate {
             }
         }
     }
+    
+    func removeAnnotation(annotation: MapAnnotation)
+    {
+        mapView.removeAnnotation(annotation)
+    }
+    
     
     func showInfoView(treasure: Treasure) {
         let alert = UIAlertController(title: "You've found an item!", message: "Visit your inventory to check it out.", preferredStyle: UIAlertControllerStyle.alert)
@@ -89,6 +96,9 @@ class MapViewController: ViewController, MKMapViewDelegate {
         locationManager.requestWhenInUseAuthorization()
         mapView.userTrackingMode = MKUserTrackingMode.followWithHeading
         
+        
+        
+        
 //        setupLocations()
         
 //        self.mapView.addAnnotation(annotation)
@@ -104,11 +114,11 @@ class MapViewController: ViewController, MKMapViewDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         player.save()
     }
+
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MapAnnotation {
             let pinAnnotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: "myPin")
-            
             pinAnnotationView.markerTintColor = .purple
             pinAnnotationView.isDraggable = true
             pinAnnotationView.canShowCallout = true
@@ -156,32 +166,38 @@ extension MapViewController: CLLocationManagerDelegate {
             if !haveFirstLocation {
                 haveFirstLocation = true
                 
-                let value = arc4random_uniform(10) + 1
+                let value = Int(arc4random_uniform(10) + 1)
                 let type = arc4random_uniform(2)
+                let rarity = Int(arc4random_uniform(3))
                 var typeEnum : Item.ItemType
                 var image : String
                 switch type {
                 case 0:
                     typeEnum = .Attack
-                    image = "treebig"
+                    image = "Item__07"
                 case 1:
                     typeEnum = .Defense
-                    image = "signbig"
+                    image = "Item__24"
                 default:
                     typeEnum = .Health
-                    image = "signbig"
+                    image = "Item__29"
                 }
                 
-                let item = Item(image: image, type: typeEnum, value: Int(value))
-                
+                let item = Item(image: image, type: typeEnum, value: Int(value + value*(rarity/2)) , rarity: Int(rarity))
 //                let treasure = Treasure(item: item, location: randCoords(lat: userLat, long: userLong), id: num)
 //                items.append(treasure)
-            
-                let newLoc = CLLocation(latitude: location.coordinate.latitude + 0.0015, longitude: location.coordinate.longitude)
+                var addlat = 0.0018
+                var addlong = 0.0018
+                let ranup = Int(arc4random_uniform(3)) - 2
+                addlat = addlat * Double(ranup) * Double(rarity)
+                let ranu = Int(arc4random_uniform(3)) - 2
+                addlong = addlong * Double(ranu) * Double(rarity)
+                let newLoc = CLLocation(latitude: location.coordinate.latitude + addlat, longitude: location.coordinate.longitude + addlong)
                 let annotation = MapAnnotation(coordinate: newLoc.coordinate, item: Treasure(item: item, location: location, id: 1))
     //            annotation.coordinate = location.coordinate
     //            annotation.title = "hi"
                 mapView.addAnnotation(annotation)
+                
     //            setupLocations(userLocation: location)
             }
         }

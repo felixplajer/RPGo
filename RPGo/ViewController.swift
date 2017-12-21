@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // every VC in the app keeps track of the Player
     var player: Player
     
     required init?(coder aDecoder: NSCoder) {

@@ -12,6 +12,7 @@ class ItemTableViewCell: UITableViewCell {
     
     var player : Player?
     
+    // display info when setting item properties
     var item: Item {
         didSet {
             self.imageView!.image = item.image

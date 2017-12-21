@@ -41,7 +41,7 @@
                                                             <constraint firstAttribute="width" constant="180" id="NKi-RC-axq"/>
                                                             <constraint firstAttribute="width" secondItem="f6E-dK-60f" secondAttribute="height" multiplier="1:1" id="OYW-Yf-Tfp"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button" image="characterbig"/>
+                                                        <state key="normal" title="Button" image="rogue-main"/>
                                                         <connections>
                                                             <segue destination="Rae-BT-SHs" kind="presentation" modalTransitionStyle="coverVertical" id="vU4-cN-iv6"/>
                                                         </connections>
@@ -351,17 +351,16 @@
                                                     <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mgp-HU-0qT">
                                                         <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="180" id="5md-bk-wyc"/>
-                                                            <constraint firstAttribute="width" secondItem="Mgp-HU-0qT" secondAttribute="height" multiplier="1:1" id="yri-nt-yBd"/>
+                                                            <constraint firstAttribute="height" constant="180" id="5md-bk-wyc"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button" image="monsterbig"/>
+                                                        <state key="normal" title="Button" image="sk-idle-0"/>
                                                     </button>
-                                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="EG3-yd-otO">
-                                                        <rect key="frame" x="0.0" y="185" width="180" height="10"/>
+                                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="EG3-yd-otO">
+                                                        <rect key="frame" x="0.0" y="185" width="180" height="11"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="10" id="W8f-VY-I00"/>
                                                         </constraints>
-                                                        <color key="progressTintColor" red="0.2401185519" green="0.69228677370000002" blue="0.83990839839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="progressTintColor" red="0.23921568627450979" green="0.69411764705882351" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="trackTintColor" red="0.76163340889999998" green="0.7691743338" blue="0.7691743338" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </progressView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8U8-ru-fO5">
@@ -443,23 +442,26 @@
                                                             </stackView>
                                                         </subviews>
                                                     </stackView>
-                                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="hvJ-FL-3Dl">
-                                                        <rect key="frame" x="0.0" y="402" width="180" height="10"/>
+                                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="hvJ-FL-3Dl">
+                                                        <rect key="frame" x="0.0" y="402" width="180" height="11"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="10" id="2G8-zm-85s"/>
                                                         </constraints>
                                                         <color key="progressTintColor" red="0.2401185519" green="0.69228677370000002" blue="0.83990839839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="trackTintColor" red="0.76163340889999998" green="0.7691743338" blue="0.7691743338" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </progressView>
-                                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPP-7e-Uqg">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bru-sL-1l6">
                                                         <rect key="frame" x="0.0" y="417" width="180" height="180"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" secondItem="lPP-7e-Uqg" secondAttribute="height" multiplier="1:1" id="D3I-Zg-30T"/>
-                                                            <constraint firstAttribute="width" constant="180" id="FMM-O1-6iF"/>
+                                                            <constraint firstAttribute="width" secondItem="bru-sL-1l6" secondAttribute="height" multiplier="1:1" id="J7q-Ww-YLo"/>
+                                                            <constraint firstAttribute="width" constant="180" id="SEb-Gs-MDE"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button" image="characterbig"/>
+                                                        <state key="normal" title=" "/>
                                                     </button>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="bru-sL-1l6" firstAttribute="width" secondItem="bru-sL-1l6" secondAttribute="height" multiplier="1:1" id="ldD-Q6-7bJ"/>
+                                                </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baH-re-db3">
                                                 <rect key="frame" x="370.5" y="0.0" width="4.5" height="597"/>
@@ -471,13 +473,23 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPP-7e-Uqg">
+                                <rect key="frame" x="52" y="472" width="270" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lPP-7e-Uqg" secondAttribute="height" multiplier="1.5:1" id="6iJ-Zl-fAg"/>
+                                    <constraint firstAttribute="height" constant="180" id="FMM-O1-6iF"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="rogue-idle-0"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.57779098179999999" green="0.76681446740000003" blue="0.83990839839999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.61568627450980395" green="0.61568627450980395" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fEv-Tr-Tvh" firstAttribute="bottom" secondItem="ObG-64-UPD" secondAttribute="bottom" constant="20" id="3HE-xq-45J"/>
                             <constraint firstItem="ObG-64-UPD" firstAttribute="width" secondItem="96j-3U-ybW" secondAttribute="width" id="FFC-bO-M6q"/>
                             <constraint firstItem="ObG-64-UPD" firstAttribute="top" secondItem="fEv-Tr-Tvh" secondAttribute="top" constant="30" id="Rdo-ey-CZi"/>
                             <constraint firstItem="ObG-64-UPD" firstAttribute="leading" secondItem="fEv-Tr-Tvh" secondAttribute="leading" id="RlC-uq-uZZ"/>
+                            <constraint firstItem="fEv-Tr-Tvh" firstAttribute="bottom" secondItem="lPP-7e-Uqg" secondAttribute="bottom" constant="15" id="d7Y-6k-4b5"/>
+                            <constraint firstItem="lPP-7e-Uqg" firstAttribute="centerX" secondItem="fEv-Tr-Tvh" secondAttribute="centerX" id="f18-rF-Cd2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fEv-Tr-Tvh"/>
                     </view>
@@ -486,7 +498,9 @@
                         <outlet property="defendButton" destination="95r-yn-JAf" id="ZDA-Qt-9mH"/>
                         <outlet property="forfeitButton" destination="OLR-KN-vTV" id="hrH-Qy-ega"/>
                         <outlet property="healButton" destination="Deo-se-Ztq" id="Uef-tE-MSc"/>
+                        <outlet property="monsterButton" destination="Mgp-HU-0qT" id="aQG-NL-kJs"/>
                         <outlet property="monsterProgress" destination="EG3-yd-otO" id="KDM-f6-pPy"/>
+                        <outlet property="playerButton" destination="lPP-7e-Uqg" id="T8B-PB-XVz"/>
                         <outlet property="playerProgress" destination="hvJ-FL-3Dl" id="dBc-1U-7sb"/>
                         <segue destination="USU-mu-ZNM" kind="unwind" identifier="battleUnwind" unwindAction="unwindWithPlayerWithSegue:" id="0dm-Ym-3Bs"/>
                     </connections>
@@ -525,7 +539,7 @@
                                                             <constraint firstAttribute="width" constant="180" id="65r-sJ-PvB"/>
                                                             <constraint firstAttribute="width" secondItem="7YG-LK-J6a" secondAttribute="height" multiplier="1:1" id="VyR-Cg-pdO"/>
                                                         </constraints>
-                                                        <state key="normal" title="Button" image="characterbig"/>
+                                                        <state key="normal" title="Button" image="rogue-main"/>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Felix" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOR-58-kG4">
                                                         <rect key="frame" x="0.0" y="195" width="180" height="20"/>
@@ -765,9 +779,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="characterbig" width="1000" height="1000"/>
-        <image name="monsterbig" width="878" height="768"/>
+        <image name="rogue-idle-0" width="500" height="333"/>
+        <image name="rogue-main" width="317" height="317"/>
         <image name="signbig" width="500" height="462"/>
+        <image name="sk-idle-0" width="504" height="672"/>
         <image name="treebig" width="500" height="469"/>
     </resources>
 </document>

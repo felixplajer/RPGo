@@ -10,6 +10,7 @@ import UIKit
 import HealthKit
 import os.log
 
+// VS for the main app screen
 class StatusViewController: ViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
@@ -20,18 +21,19 @@ class StatusViewController: ViewController {
     @IBOutlet weak var expLabel: UILabel!
     var healthStore: HKHealthStore?
     
+    // update player info
     func updatePlayerDisplay() {
         DispatchQueue.main.async {
             self.nameLabel.text = self.player.name
             self.levelLabel.text = "Level \(self.player.level)"
             self.expLabel.text = "EXP: \(self.player.expInt()) / \(self.player.expNeeded)"
             self.progressLabel.progress = Float(self.player.exp) / Float(self.player.expNeeded)
-//            self.distLabel.text = "\(self.player.dateMiles) miles"
             self.distLabel.text = String(format: "%.2f miles", self.player.dateMiles)
             self.stepLabel.text = "\(self.player.dateSteps) steps"
         }
     }
     
+    // level the player up
     func handleLevelUp() { // alert player to the level up
         DispatchQueue.main.async {
             let alert = UIAlertController(title: "You Leveled Up!", message: "", preferredStyle: .alert)
@@ -42,6 +44,7 @@ class StatusViewController: ViewController {
         }
     }
     
+    // get EXP from new steps + distance
     func handleStepDistance(steps: Int, miles: Double) {
         var expGain = 0.0
         let now = Date()
@@ -90,6 +93,7 @@ class StatusViewController: ViewController {
         }
     }
     
+    // start a battle
     func goToBattle() {
         DispatchQueue.main.async {
             let alert = UIAlertController(title: "You encountered a Monster!", message: "", preferredStyle: .alert)
@@ -104,7 +108,7 @@ class StatusViewController: ViewController {
     }
     
     
-    
+    // get new step data
     func fetchSteps(healthStore: HKHealthStore){
         let startDate = Calendar.current.startOfDay(for: Date())
         
@@ -131,6 +135,7 @@ class StatusViewController: ViewController {
         healthStore.execute(query)
     }
     
+    // get new distance data
     func fetchDistance(healthStore: HKHealthStore){
         let startDate = Calendar.current.startOfDay(for: Date())
         
@@ -157,6 +162,7 @@ class StatusViewController: ViewController {
         healthStore.execute(query)
     }
     
+    // set up observer to notify upon new step + distance data
     func observeStepsAndDistance(healthStore: HKHealthStore){
         let stepSampleType = HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!
         let stepQuery = HKObserverQuery(sampleType: stepSampleType, predicate: nil) {
@@ -185,7 +191,6 @@ class StatusViewController: ViewController {
     
     
     // Actually do the things
-    
     override func viewDidLoad() {
         self.updatePlayerDisplay()
         NSLog("Num items: \(player.items.count)")

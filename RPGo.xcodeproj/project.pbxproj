@@ -25,6 +25,7 @@
 		CCE013DB1FB94938002C61DC /* RPGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE013DA1FB94938002C61DC /* RPGoUITests.swift */; };
 		CCE013EA1FB94F27002C61DC /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCE013E91FB94F27002C61DC /* HealthKit.framework */; };
 		CCE013EF1FBA2C00002C61DC /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE013EE1FBA2C00002C61DC /* StatusViewController.swift */; };
+		CCFCF3F21FEB35F7005C82DC /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFCF3F11FEB35F7005C82DC /* SpriteKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		CCE013E91FB94F27002C61DC /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		CCE013EB1FB94F28002C61DC /* RPGo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RPGo.entitlements; sourceTree = "<group>"; };
 		CCE013EE1FBA2C00002C61DC /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		CCFCF3F11FEB35F7005C82DC /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCFCF3F21FEB35F7005C82DC /* SpriteKit.framework in Frameworks */,
 				CCE013EA1FB94F27002C61DC /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +167,7 @@
 		CCE013E81FB94F27002C61DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CCFCF3F11FEB35F7005C82DC /* SpriteKit.framework */,
 				CCE013E91FB94F27002C61DC /* HealthKit.framework */,
 			);
 			name = Frameworks;

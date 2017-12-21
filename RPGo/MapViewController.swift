@@ -10,6 +10,7 @@ import UIKit
 import CoreLocation
 import MapKit
 
+// holds an item + its map location
 struct Treasure {
     let item: Item
     let location: CLLocation
@@ -19,11 +20,12 @@ struct Treasure {
 class MapViewController: ViewController, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
-    var items = [Treasure]()
+    var items = [Treasure]() // all items on map
     let locationManager = CLLocationManager()
     var userLocation: CLLocation?
     var haveFirstLocation = false
     
+    // generate nearby random coords
     func randCoords(lat: Double, long: Double) -> CLLocation { // roughly a square mile cube
         var rand =  Double(arc4random()) / Double(UINT32_MAX)
         rand = ((rand * 2 - 1) / 69) / 5000
@@ -36,6 +38,7 @@ class MapViewController: ViewController, MKMapViewDelegate {
         return CLLocation(latitude: randLat, longitude: randLong)
     }
     
+    // setup the location of the items
     func setupLocations(userLocation: CLLocation) {
         let userCoords = userLocation.coordinate
         let userLat = userCoords.latitude.magnitude
@@ -73,6 +76,7 @@ class MapViewController: ViewController, MKMapViewDelegate {
         }
     }
     
+    // show that item has been found (when clicked)
     func showInfoView(treasure: Treasure) {
         let alert = UIAlertController(title: "You've found an item!", message: "Visit your inventory to check it out.", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
@@ -88,23 +92,15 @@ class MapViewController: ViewController, MKMapViewDelegate {
         locationManager.startUpdatingLocation()
         locationManager.requestWhenInUseAuthorization()
         mapView.userTrackingMode = MKUserTrackingMode.followWithHeading
-        
-//        setupLocations()
-        
-//        self.mapView.addAnnotation(annotation)
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
-    // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         player.save()
     }
     
+    // style map pins
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MapAnnotation {
             let pinAnnotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: "myPin")
@@ -120,21 +116,11 @@ class MapViewController: ViewController, MKMapViewDelegate {
             deleteButton.setImage(UIImage(named: "tick"), for: .normal)
             deleteButton.setTitle("Collect", for: .normal)
             deleteButton.setTitleColor(.black, for: .normal)
-            deleteButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-            
-//            pinAnnotationView.leftCalloutAccessoryView = deleteButton
-//            pinAnnotationView.detailCalloutAccessoryView = deleteButton
             
             return pinAnnotationView
         }
         return nil
         
-    }
-
-    @objc func buttonAction(sender: UIButton!) {
-        
-        
-        NSLog("it worrrrked")
     }
 
 }
@@ -144,6 +130,7 @@ extension MapViewController: CLLocationManagerDelegate {
         return true
     }
     
+    // keep track of user's location + generate item
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         if locations.count > 0 {
@@ -174,27 +161,15 @@ extension MapViewController: CLLocationManagerDelegate {
                 
                 let item = Item(image: image, type: typeEnum, value: Int(value))
                 
-//                let treasure = Treasure(item: item, location: randCoords(lat: userLat, long: userLong), id: num)
-//                items.append(treasure)
             
                 let newLoc = CLLocation(latitude: location.coordinate.latitude + 0.0015, longitude: location.coordinate.longitude)
                 let annotation = MapAnnotation(coordinate: newLoc.coordinate, item: Treasure(item: item, location: location, id: 1))
-    //            annotation.coordinate = location.coordinate
-    //            annotation.title = "hi"
                 mapView.addAnnotation(annotation)
-    //            setupLocations(userLocation: location)
             }
         }
     }
 
-//    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
-//        self.userLocation = userLocation.location
-//        if !haveFirstLocation {
-//            haveFirstLocation = true
-////            setupLocations(userLocation: userLocation.location)
-//        }
-//    }
-//
+    // collect item when clicking on an annotation/pin
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         NSLog("this tooooo")
         let coordinate = view.annotation!.coordinate
@@ -204,9 +179,6 @@ extension MapViewController: CLLocationManagerDelegate {
             if let mapAnnotation = view.annotation as? MapAnnotation {
                 player.items.append(mapAnnotation.item.item)
 
-//                let index = self.items.index(where: {$0.id == mapAnnotation.item.id})
-//                self.items.remove(at: index!)
-
                 showInfoView(treasure: mapAnnotation.item)
                 mapView.removeAnnotation(view.annotation!)
             }
@@ -214,8 +186,4 @@ extension MapViewController: CLLocationManagerDelegate {
         
     }
 }
-
-//extension MapViewController: AnnotationViewDelegate {
-//    didTouch
-//}
 

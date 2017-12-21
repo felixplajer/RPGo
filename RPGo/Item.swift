@@ -9,6 +9,7 @@
 import UIKit
 import os.log
 
+// represents an Item
 class Item: NSObject, NSCoding {
     
     convenience init(image: String, type: ItemType, value: Int, rarity: Int) {

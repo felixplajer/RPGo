@@ -8,6 +8,7 @@
 
 import UIKit
 
+// VC for character detail view
 class CharacterViewController: ViewController {
 
     @IBOutlet weak var nameLabel: UILabel!
@@ -21,13 +22,13 @@ class CharacterViewController: ViewController {
     @IBOutlet weak var speedLabel: UILabel!
     @IBOutlet weak var healthLabel: UILabel!
     
+    // update character info
     func updatePlayerDisplay() {
         DispatchQueue.main.async {
             self.nameLabel.text = self.player.name
             self.levelLabel.text = "Level \(self.player.level)"
             self.expLabel.text = "EXP: \(self.player.expInt()) / \(self.player.expNeeded)"
             self.progressBar.progress = Float(self.player.exp) / Float(self.player.expNeeded)
-//            self.distLabel.text = "\(self.player.dateMiles) miles"
             self.distLabel.text = String(format: "%.2f miles", self.player.dateMiles)
             self.stepLabel.text = "\(self.player.dateSteps) steps"
             
@@ -40,10 +41,10 @@ class CharacterViewController: ViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        player.items.append(Item(image: "treebig", type: .Defense, value: 5))
         self.updatePlayerDisplay()
     }
     
+    // update info every time view appears again (not just on loading)
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.updatePlayerDisplay()
@@ -56,8 +57,6 @@ class CharacterViewController: ViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
     
     // MARK: - Navigation
 

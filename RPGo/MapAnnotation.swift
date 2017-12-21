@@ -10,6 +10,8 @@ import UIKit
 import Foundation
 import MapKit
 
+
+// annotation for the map that holds an item
 class MapAnnotation: NSObject, MKAnnotation {
     let coordinate: CLLocationCoordinate2D
     let title: String? = " "

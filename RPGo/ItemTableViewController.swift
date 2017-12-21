@@ -8,6 +8,7 @@
 
 import UIKit
 
+// VC for the item inventory screen (from character page)
 class ItemTableViewController: ViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
@@ -23,8 +24,6 @@ class ItemTableViewController: ViewController, UITableViewDelegate, UITableViewD
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
-
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -33,6 +32,7 @@ class ItemTableViewController: ViewController, UITableViewDelegate, UITableViewD
         return player.items.count
     }
 
+    // return the items in order for the cells
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "itemCell", for: indexPath) as! ItemTableViewCell
 
@@ -46,6 +46,7 @@ class ItemTableViewController: ViewController, UITableViewDelegate, UITableViewD
     }
 
     
+    // when selected, equip item and show checkmark
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if cellList[indexPath.row]?.item.type != .Health {
             cellList[indexPath.row]?.accessoryType = .checkmark
@@ -53,6 +54,7 @@ class ItemTableViewController: ViewController, UITableViewDelegate, UITableViewD
         }
     }
     
+    // unequip item
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         if cellList[indexPath.row]?.item.type != .Health {
             cellList[indexPath.row]?.accessoryType = .none

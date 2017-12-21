@@ -9,6 +9,8 @@
 import UIKit
 import os.log
 
+
+// Keeps track of all player data (persistant between app sessions)
 class Player: NSObject, NSCoding {
 
     init(name: String, level: Int, exp: Double, attack: Int, defense: Int, health: Int, speed: Int, steps: Int, miles: Double, date: Date) {
@@ -165,57 +167,6 @@ class Player: NSObject, NSCoding {
         }
     }
     
-//    static func read() -> Player {
-//        var name = UserDefaults.standard.string(forKey: "playerName")
-//        var level = UserDefaults.standard.integer(forKey: "playerLevel")
-//        var exp = UserDefaults.standard.double(forKey: "playerExp")
-//        var attack = UserDefaults.standard.integer(forKey: "playerAttack")
-//        var defense = UserDefaults.standard.integer(forKey: "playerDefense")
-//        var speed = UserDefaults.standard.integer(forKey: "playerSpeed")
-//        var health = UserDefaults.standard.integer(forKey: "playerHealth")
-//        var steps = UserDefaults.standard.integer(forKey: "playerSteps")
-//        var miles = UserDefaults.standard.double(forKey: "playerMiles")
-//        var items = loadItems()
-//
-//        let dateString = UserDefaults.standard.string(forKey: "playerDate")
-//        var date : Date
-//        if dateString == nil {
-////            date = Calendar.current.startOfDay(for: Date())
-//            date = Date()
-//        } else {
-//            date = DateFormatter().date(from: dateString!)!
-//        }
-//
-//        if name == nil {
-//            name = "Felix"
-//            level = 1
-//            exp = 0.0
-//            attack = 5
-//            defense = 5
-//            speed = 5
-//            health = 10
-//            items = []
-//            steps = 0
-//            miles = 0.0
-////            date = Calendar.current.startOfDay(for: Date())
-//            date = Date()
-//        }
-//
-//        if items == nil {
-//            items = []
-//        }
-//
-//        let player = Player.init(name: name!, level: level, exp: exp, attack: attack, defense: defense, health: health, speed: speed, steps: steps, miles: miles, date: date)
-//        player.items = items!
-//
-//        player.save()
-//
-//        NSLog("got: \(player.dateSteps) st")
-//        NSLog("got: \(player.dateMiles) mi")
-//
-//        return player
-//    }
-    
     func saveItems() {
         let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(items, toFile: Item.ArchiveURL.path)
         if isSuccessfulSave {
@@ -224,10 +175,7 @@ class Player: NSObject, NSCoding {
             os_log("Failed to save items...", log: OSLog.default, type: .error)
         }
     }
-    
-//    static func loadItems() -> [Item]? {
-//        return NSKeyedUnarchiver.unarchiveObject(withFile: Item.ArchiveURL.path) as? [Item]
-//    }
+
 
     struct PlayerKey {
         static let date = "date"
